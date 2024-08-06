@@ -6,6 +6,7 @@ import sun from './sun.svg'
 import bar_close_light from './bar_close_light.svg'
 import logo_light from './logo_light.svg'
 import menu_bar_light from './menu_bar_light.svg'
+import photo from './photo.svg'
 
 export const assets = {
   menu_bar,
@@ -16,4 +17,5 @@ export const assets = {
   bar_close_light,
   logo_light,
   menu_bar_light,
+  photo,
 }
