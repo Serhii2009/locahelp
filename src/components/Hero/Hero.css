@@ -1,0 +1,84 @@
+/* Phone display */
+.hero-title {
+  margin-top: 200px;
+}
+
+.hero-title h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #323f47;
+  text-align: center;
+}
+
+.hero-button {
+  border: none;
+  background-color: #9be1a0;
+  color: #323f47;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 22px 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 30px 95px;
+}
+
+.hero-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.hero img {
+  margin-top: 100px;
+  margin-left: 277px;
+  width: 30px;
+  height: 30px;
+}
+
+.hero img:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Tablet display */
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    margin-top: 270px;
+  }
+
+  .hero-title h1 {
+    font-size: 80px;
+  }
+
+  .hero-button {
+    padding: 26px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 50px 270px;
+  }
+
+  .hero img {
+    margin-top: 160px;
+    margin-left: 634px;
+  }
+}
+
+/* Desktop display */
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    margin-top: 154px;
+  }
+
+  .hero-button {
+    padding: 26px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 50px 606px;
+  }
+
+  .hero img {
+    margin-top: 90px;
+    margin-left: 1306px;
+  }
+}
