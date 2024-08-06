@@ -1,11 +1,12 @@
 import './NavBar.css'
 import { assets } from '../../assets/assets.js'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = () => {
   const [modal, setModal] = useState(false)
   const [isDarkTheme, setIsDarkTheme] = useState(false)
+  const location = useLocation()
 
   const toggleModal = () => {
     setModal(!modal)
@@ -41,19 +42,23 @@ const NavBar = () => {
       </Link>
 
       <ul className="navbar-list">
-        <li>
+        <li className={location.pathname === '/about-us' ? 'active' : ''}>
           <Link to="/about-us">About Us</Link>
         </li>
-        <li>
+        <li className={location.pathname === '/our-mission' ? 'active' : ''}>
           <Link to="/our-mission">Our Mission</Link>
         </li>
-        <li>
+        <li
+          className={
+            location.pathname === '/best-opportunities' ? 'active' : ''
+          }
+        >
           <Link to="/best-opportunities">Best Opportunities</Link>
         </li>
-        <li>
+        <li className={location.pathname === '/support' ? 'active' : ''}>
           <Link to="/support">Support</Link>
         </li>
-        <li>
+        <li className={location.pathname === '/relaxing-game' ? 'active' : ''}>
           <Link to="/relaxing-game">Relaxing game</Link>
         </li>
       </ul>
@@ -71,19 +76,39 @@ const NavBar = () => {
           <div className="modal">
             <div className="modal-component">
               <div className="modal-list">
-                <li>
+                <li
+                  className={location.pathname === '/about-us' ? 'active' : ''}
+                >
                   <Link to="/about-us">About Us</Link>
                 </li>
-                <li className="modal-li">
+                <li
+                  style={{ paddingTop: 20 }}
+                  className={
+                    location.pathname === '/our-mission' ? 'active' : ''
+                  }
+                >
                   <Link to="/our-mission">Our Mission</Link>
                 </li>
-                <li className="modal-li">
+                <li
+                  style={{ paddingTop: 20 }}
+                  className={
+                    location.pathname === '/best-opportunities' ? 'active' : ''
+                  }
+                >
                   <Link to="/best-opportunities">Best Opportunities</Link>
                 </li>
-                <li className="modal-li">
+                <li
+                  style={{ paddingTop: 20 }}
+                  className={location.pathname === '/support' ? 'active' : ''}
+                >
                   <Link to="/support">Support</Link>
                 </li>
-                <li className="modal-li">
+                <li
+                  style={{ paddingTop: 20 }}
+                  className={
+                    location.pathname === '/relaxing-game' ? 'active' : ''
+                  }
+                >
                   <Link to="/relaxing-game">Relaxing game</Link>
                 </li>
               </div>
