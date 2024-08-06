@@ -1,6 +1,7 @@
 import './NavBar.css'
 import { assets } from '../../assets/assets.js'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   const [modal, setModal] = useState(false)
@@ -31,18 +32,30 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <img
-        className="navbar-logo"
-        src={isDarkTheme ? assets.logo_light : assets.logo}
-        alt="logo"
-      />
+      <Link to="/">
+        <img
+          className="navbar-logo"
+          src={isDarkTheme ? assets.logo_light : assets.logo}
+          alt="logo"
+        />
+      </Link>
 
       <ul className="navbar-list">
-        <li>About Us</li>
-        <li>Our Mission</li>
-        <li>Our Policy</li>
-        <li>Support</li>
-        <li>Relaxing game</li>
+        <li>
+          <Link to="/about-us">About Us</Link>
+        </li>
+        <li>
+          <Link to="/our-mission">Our Mission</Link>
+        </li>
+        <li>
+          <Link to="/best-opportunities">Best Opportunities</Link>
+        </li>
+        <li>
+          <Link to="/support">Support</Link>
+        </li>
+        <li>
+          <Link to="/relaxing-game">Relaxing game</Link>
+        </li>
       </ul>
 
       <div className="navbar-right">
@@ -58,11 +71,21 @@ const NavBar = () => {
           <div className="modal">
             <div className="modal-component">
               <div className="modal-list">
-                <li>About Us</li>
-                <li className="modal-li">Our Mission</li>
-                <li className="modal-li">Our Policy</li>
-                <li className="modal-li">Support</li>
-                <li className="modal-li">Relaxing game</li>
+                <li>
+                  <Link to="/about-us">About Us</Link>
+                </li>
+                <li className="modal-li">
+                  <Link to="/our-mission">Our Mission</Link>
+                </li>
+                <li className="modal-li">
+                  <Link to="/best-opportunities">Best Opportunities</Link>
+                </li>
+                <li className="modal-li">
+                  <Link to="/support">Support</Link>
+                </li>
+                <li className="modal-li">
+                  <Link to="/relaxing-game">Relaxing game</Link>
+                </li>
               </div>
 
               <img
