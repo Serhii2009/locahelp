@@ -1,3 +1,13 @@
+:root {
+  --grey-color: #323f47;
+  --green-color: #9be1a0;
+}
+
+.dark-theme {
+  --grey-color: #ffffff;
+  --green-color: #328c39;
+}
+
 /* Phone display */
 .hero-title {
   margin-top: 200px;
@@ -6,14 +16,14 @@
 .hero-title h1 {
   font-size: 38px;
   font-weight: bold;
-  color: #323f47;
+  color: var(--grey-color);
   text-align: center;
 }
 
 .hero-button {
   border: none;
-  background-color: #9be1a0;
-  color: #323f47;
+  background-color: var(--green-color);
+  color: var(--grey-color);
   font-weight: bold;
   border-radius: 30px;
   font-size: 20px;
