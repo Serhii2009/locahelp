@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 import './Background.css'
 import { assets } from '../../assets/assets'
@@ -6,12 +6,23 @@ import { assets } from '../../assets/assets'
 const Background = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
 
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme)
-    if (!isDarkTheme) {
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'dark') {
+      setIsDarkTheme(true)
       document.documentElement.classList.add('dark-theme')
+    }
+  }, [])
+
+  const toggleTheme = () => {
+    const newTheme = !isDarkTheme
+    setIsDarkTheme(newTheme)
+    if (newTheme) {
+      document.documentElement.classList.add('dark-theme')
+      localStorage.setItem('theme', 'dark')
     } else {
       document.documentElement.classList.remove('dark-theme')
+      localStorage.setItem('theme', 'light')
     }
   }
 
