@@ -1,0 +1,114 @@
+.mission-top {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.mission-top h1 {
+  color: var(--grey-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.mission-top p {
+  color: var(--grey-color);
+  width: 300px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.mission-down {
+  margin-top: 30px;
+}
+
+.mission-down h1 {
+  color: var(--grey-color);
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 110px;
+}
+
+.mission-down p {
+  color: var(--grey-color);
+  width: 300px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mission {
+    gap: 50px;
+  }
+
+  .mission-top {
+    margin-top: 50px;
+    margin-left: 124px;
+  }
+
+  .mission-top h1 {
+    color: var(--grey-color);
+    padding-left: 111px;
+  }
+
+  .mission-top p {
+    width: 524px;
+  }
+
+  /* --------- */
+
+  .mission-down {
+    margin-top: 50px;
+    margin-left: 124px;
+  }
+
+  .mission-down h1 {
+    color: var(--grey-color);
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 150px;
+  }
+
+  .mission-down p {
+    color: var(--grey-color);
+    width: 524px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mission {
+    gap: 116px;
+  }
+
+  .mission-top {
+    margin-top: 108px;
+    margin-left: 200px;
+  }
+
+  .mission-top h1 {
+    color: var(--grey-color);
+    padding-left: 372px;
+  }
+
+  .mission-top p {
+    width: 1049px;
+  }
+
+  /* --------- */
+
+  .mission-down {
+    margin-top: 116px;
+    margin-left: 200px;
+  }
+
+  .mission-down h1 {
+    padding-left: 410px;
+  }
+
+  .mission-down p {
+    width: 1049px;
+  }
+}
