@@ -5,6 +5,7 @@ import OurMission from './pages/OurMission/OurMission'
 import BestOpportunities from './pages/BestOpportunities/BestOpportunities'
 import Support from './pages/Support/Support'
 import RelaxingGame from './pages/RelaxingGame/RelaxingGame'
+import CountryChoise from './pages/CountryChoise/CountryChoise'
 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -16,6 +17,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/country-choise" element={<CountryChoise />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-mission" element={<OurMission />} />
           <Route path="//best-opportunities" element={<BestOpportunities />} />

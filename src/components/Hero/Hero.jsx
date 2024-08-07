@@ -1,6 +1,7 @@
 import './Hero.css'
 import { assets } from '../../assets/assets.js'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -29,7 +30,9 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-title">
         <h1>Your Relocation Assistant</h1>
-        <div className="hero-button">Try it out</div>
+        <Link to="/country-choise">
+          <div className="hero-button">Try it out</div>
+        </Link>
       </div>
       <img
         src={assets.moon}
