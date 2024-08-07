@@ -6,9 +6,13 @@ import BestOpportunities from './pages/BestOpportunities/BestOpportunities'
 import Support from './pages/Support/Support'
 import RelaxingGame from './pages/RelaxingGame/RelaxingGame'
 
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 const App = () => {
   return (
     <div>
+      <ToastContainer />
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />

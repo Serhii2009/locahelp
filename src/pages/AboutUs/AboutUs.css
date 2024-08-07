@@ -6,13 +6,13 @@
   --fone-color: #323f47;
 }
 
-.generalStaticBack {
+.generalStaticBack-us {
   padding: 16px 0;
   margin: 0 auto;
   max-width: 343px;
 }
 
-.background-box {
+.background-box-us {
   border-radius: 30px;
   background-color: var(--fone-color);
 
@@ -22,48 +22,48 @@
 
 /* ------------ */
 
-.background-static-img img {
+.background-static-img-us img {
   margin-top: 80px;
   margin-left: 277px;
   width: 30px;
   height: 30px;
 }
 
-.background-static-img img:hover {
+.background-static-img-us img:hover {
   transform: scale(1.04);
   transition: 0.3s;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
-  .generalStaticBack {
+  .generalStaticBack-us {
     padding: 32px 0;
     max-width: 704px;
   }
 
-  .background-box {
+  .background-box-us {
     width: 704px;
     height: 630px;
   }
 
-  .background-static-img img {
+  .background-static-img-us img {
     margin-top: 50px;
     margin-left: 634px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .generalStaticBack {
+  .generalStaticBack-us {
     display: flex;
     gap: 32px;
     max-width: 1376px;
   }
 
-  .background-box {
+  .background-box-us {
     width: 1376px;
     height: 664px;
   }
 
-  .background-static-img img {
+  .background-static-img-us img {
     margin-top: -64px;
     margin-left: 1306px;
   }

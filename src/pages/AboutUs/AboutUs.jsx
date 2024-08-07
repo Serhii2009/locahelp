@@ -28,11 +28,11 @@ const AboutUs = () => {
   }
 
   return (
-    <div className="generalStaticBack">
-      <div className="background-box">
+    <div className="generalStaticBack-us">
+      <div className="background-box-us">
         <NavBar />
         <Info />
-        <div className="background-static-img">
+        <div className="background-static-img-us">
           <img
             src={assets.moon}
             alt="moon"
