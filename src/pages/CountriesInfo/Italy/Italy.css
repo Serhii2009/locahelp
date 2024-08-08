@@ -17,7 +17,7 @@
   background-color: var(--fone-color);
 
   width: 343px;
-  height: 1930px;
+  height: 1410px;
 }
 
 /* ------------ */
@@ -43,7 +43,7 @@
 
   .background-box-italy {
     width: 704px;
-    height: 1087px;
+    height: 980px;
   }
 
   .background-static-img-italy img {
@@ -64,7 +64,6 @@
   }
 
   .background-static-img-italy img {
-    margin-top: 32px;
     margin-left: 1306px;
   }
 }
