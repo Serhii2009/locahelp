@@ -2,6 +2,7 @@ import './CountryChoise.css'
 import { useEffect, useState } from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import { assets } from '../../assets/assets'
+import Country from '../../components/Country/Country'
 
 const CountryChoise = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -30,7 +31,7 @@ const CountryChoise = () => {
     <div className="generalStaticBack-country">
       <div className="background-box-country">
         <NavBar />
-
+        <Country />
         <div className="background-static-img-country">
           <img
             src={assets.moon}

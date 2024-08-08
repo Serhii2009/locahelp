@@ -17,13 +17,13 @@
   background-color: var(--fone-color);
 
   width: 343px;
-  height: 1612px;
+  height: 1930px;
 }
 
 /* ------------ */
 
 .background-static-img-country img {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 277px;
   width: 30px;
   height: 30px;
@@ -43,7 +43,7 @@
 
   .background-box-country {
     width: 704px;
-    height: 630px;
+    height: 1087px;
   }
 
   .background-static-img-country img {
@@ -64,7 +64,7 @@
   }
 
   .background-static-img-country img {
-    margin-top: -64px;
+    margin-top: 32px;
     margin-left: 1306px;
   }
 }
