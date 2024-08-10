@@ -364,3 +364,36 @@ export const CanadaFAQs = {
     },
   ],
 }
+
+export const OpportunitiesFAQs = [
+  {
+    title: 'Unlock Your Ideal Destination',
+    description:
+      'Relocating to a new city or country is more than just a change of address—it’s an opportunity to embrace new experiences, cultures, and possibilities. At Your Relocation Assistant, we specialize in connecting you with the best opportunities tailored to your unique needs and aspirations. Whether you’re seeking a thriving job market, a top-notch education, or a vibrant lifestyle, we’ve got you covered.',
+  },
+  {
+    title: 'Career Growth',
+    description:
+      'Step into a world of professional advancement with access to booming industries and leading employers in your chosen destination. We’ll help you navigate job markets, identify in-demand skills, and connect with recruiters who value your expertise. From tech hubs to financial districts, we know where your talents will shine brightest.',
+  },
+  {
+    title: 'Quality Education',
+    description:
+      'For families, ensuring a quality education for your children is a top priority. We provide insights into the best schools, universities, and educational systems worldwide. Whether you’re looking for prestigious international schools or local institutions known for academic excellence, we’ll guide you to the right choice.',
+  },
+  {
+    title: 'Lifestyle and Living',
+    description:
+      'Imagine living in a place where every day feels like a new adventure. Whether you’re drawn to bustling urban centers, serene coastal towns, or charming rural landscapes, we’ll match your lifestyle preferences with the best places to live. Our curated list of cities and neighborhoods highlights the top spots for safety, culture, entertainment, and community.',
+  },
+  {
+    title: 'Cultural and Social Integration',
+    description:
+      'Moving to a new place means adapting to a new culture and social environment. We offer resources and tips to help you integrate smoothly, from understanding local customs and traditions to connecting with expat communities and social networks. Your new life should feel like home—let us help you get there.',
+  },
+  {
+    title: 'Health and Wellness',
+    description:
+      'Your well-being is paramount. We highlight destinations known for their excellent healthcare systems, wellness resources, and healthy living environments. Whether it’s access to top-tier medical care, outdoor activities, or wellness communities, we’ll ensure you can maintain a high quality of life.',
+  },
+]

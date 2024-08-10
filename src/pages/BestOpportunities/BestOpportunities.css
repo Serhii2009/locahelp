@@ -1,0 +1,70 @@
+:root {
+  --fone-color: #f0eff4;
+}
+
+.dark-theme {
+  --fone-color: #323f47;
+}
+
+.generalStaticBack-opportunities {
+  padding: 16px 0;
+  margin: 0 auto;
+  max-width: 343px;
+}
+
+.background-box-opportunities {
+  border-radius: 30px;
+  background-color: var(--fone-color);
+
+  width: 343px;
+  height: 1860px;
+}
+
+/* ------------ */
+
+.background-static-img-opportunities img {
+  margin-top: 60px;
+  margin-left: 277px;
+  width: 30px;
+  height: 30px;
+}
+
+.background-static-img-opportunities img:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .generalStaticBack-opportunities {
+    padding: 32px 0;
+    max-width: 704px;
+  }
+
+  .background-box-opportunities {
+    width: 704px;
+    height: 1090px;
+  }
+
+  .background-static-img-opportunities img {
+    margin-top: 50px;
+    margin-left: 634px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .generalStaticBack-opportunities {
+    display: flex;
+    gap: 32px;
+    max-width: 1376px;
+  }
+
+  .background-box-opportunities {
+    width: 1376px;
+    height: 664px;
+  }
+
+  .background-static-img-opportunities img {
+    margin-top: 0px;
+    margin-left: 1306px;
+  }
+}
